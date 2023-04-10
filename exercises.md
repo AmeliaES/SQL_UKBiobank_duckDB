@@ -47,11 +47,13 @@
 * Find the table that contains data on "smoking status". Hint: use the datashow case to find the field ID for this (https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=20116) or use the "Dictionary" table.
     <details>
       <summary>Answer:</summary>
-    ```
+    
+    ```SQL
     SELECT "Table", "FieldID", "Field"
     FROM Dictionary
     WHERE "Field" LIKE '%moking%' AND "Field" LIKE '%tatus%';
     ```
+    
     The field ID for smoking status is "20116" and it's in the Touchscreen table.
     Check all possible instances and arrays for this field:
     ```SQL
@@ -62,6 +64,7 @@
     ORDER BY    TableName
                 ,ColumnName;
     ```
+    
     This shows us the 4 columns representing the different instances for smoking and that they are all found in the Touchscreen table.
     </details>
 
