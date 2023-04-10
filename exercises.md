@@ -49,6 +49,7 @@ This shows us the 4 columns representing the different instances for smoking and
 * Write a statement to show participants with smoking "Current".
 <details>
   <summary>Answer:</summary>
+
 ```SQL
 
 ```
@@ -57,6 +58,7 @@ This shows us the 4 columns representing the different instances for smoking and
 * Write a statement that counts the number of rows from inner joining X and X where Y is X.
 <details>
   <summary>Answer:</summary>
+
 ```SQL
 
 ```
@@ -65,6 +67,7 @@ This shows us the 4 columns representing the different instances for smoking and
 * Write a function to show the minimum, maximum and average results for "C-reactive protein". 
 <details>
   <summary>Answer:</summary>
+
 ```SQL
 
 ```
