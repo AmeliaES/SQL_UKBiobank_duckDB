@@ -1,14 +1,14 @@
 ## Practice exercises for SQL queries of UK Biobank duckDB
 
 * List the names of all the available tables
-<details>
-  <summary>Answer:</summary>
-  
-```SQL
-SELECT table_name
-FROM INFORMATION_SCHEMA.TABLES;
-```
-</details>
+    <details>
+      <summary>Answer:</summary>
+      
+    ```SQL
+    SELECT table_name
+    FROM INFORMATION_SCHEMA.TABLES;
+    ```
+    </details>
 
 * Show the first 10 rows of all columns of the "WorkEnvironment" table
 <details>
