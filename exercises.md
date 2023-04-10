@@ -4,7 +4,7 @@
 <details>
   <summary>Answer:</summary>
   
-```
+```SQL
 SELECT table_name
 FROM INFORMATION_SCHEMA.TABLES;
 ```
@@ -40,7 +40,8 @@ This shows us the 4 columns representing the different instances for smoking and
 * Return summary counts for smoking status. ie. how many people for prefer not to answer, never, previous or current?
 <details>
   <summary>Answer:</summary>
-```
+
+```SQL
 
 ```
 </details>
@@ -48,7 +49,7 @@ This shows us the 4 columns representing the different instances for smoking and
 * Write a statement to show participants with smoking "Current".
 <details>
   <summary>Answer:</summary>
-```
+```SQL
 
 ```
 </details>
@@ -56,7 +57,7 @@ This shows us the 4 columns representing the different instances for smoking and
 * Write a statement that counts the number of rows from inner joining X and X where Y is X.
 <details>
   <summary>Answer:</summary>
-```
+```SQL
 
 ```
 </details>
@@ -64,7 +65,7 @@ This shows us the 4 columns representing the different instances for smoking and
 * Write a function to show the minimum, maximum and average results for "C-reactive protein". 
 <details>
   <summary>Answer:</summary>
-```
+```SQL
 
 ```
 </details>
