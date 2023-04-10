@@ -4,7 +4,7 @@ List the names of all the available tables
 <details>
   <summary>Answer:</summary>
   
-```
+```SQL
 SELECT table_name
 FROM INFORMATION_SCHEMA.TABLES;
 ```
