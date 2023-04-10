@@ -43,7 +43,8 @@ This then allows duckdb to run by simply executing `duckdb` rather than typing t
 </details>
 
 We are now using the duckDB command line interface. For more info about this, including helpful commands see the documentation [here](https://duckdb.org/docs/api/cli.html). You should see something that looks similar to this:
-[figs/duckDB_open.png]
+
+![figs/duckDB_open.png](figs/duckDB_open.png)
 
 **5. Connect to the UKB database (NB. use the full path if you didn't make a symlink - see above):**
 ```
