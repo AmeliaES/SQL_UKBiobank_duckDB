@@ -116,6 +116,10 @@
             USING ("f.eid") 
          INNER JOIN Touchscreen
             USING ("f.eid");
+    
+    -- Using the columns function and matching using regular expressions:
+    SELECT columns('f.20116.')
+    FROM Touchscreen;
     ```
     </details>
 
