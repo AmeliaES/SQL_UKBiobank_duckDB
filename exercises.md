@@ -31,6 +31,13 @@
     FROM INFORMATION_SCHEMA.COLUMNS
     WHERE TABLE_NAME = 'BaselineCharacteristics';
     ```
+    
+    It's also possible to run the following which will return a list of all the tables:
+    ```SQL
+    .tables
+    ```
+    Note that this is case sensitive, `.tables` is an object. And `.TABLES` won't work.
+    
     </details>
 
 * Return meta data about all field IDs and their field description in the "Touchscreen" table.
@@ -42,6 +49,7 @@
     FROM Dictionary
     WHERE "Table" = 'Touchscreen';
     ```
+    Note how we have to use double quotations around "Table", this is because it's an object in SQL. It's good practice to then also put double quotations around FieldID and Field too. Single quotations are used for string searches.
     </details>
 
 * Find the table that contains data on "smoking status". Hint: use the datashow case to find the field ID for this (https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=20116) or use the "Dictionary" table.
@@ -65,7 +73,7 @@
                 ,ColumnName;
     ```
     
-    This shows us the 4 columns representing the different instances for smoking and that they are all found in the Touchscreen table.
+    This shows us the 4 columns representing the different instances for smoking and that they are all found in the Touchscreen table. NB. You can also use `ILIKE` to query without cases, as `LIKE` is case sensitive. 
     </details>
 
 * Return summary counts for smoking status for the initial assement visit (instance = 0). ie. how many people for prefer not to answer, never, previous or current?
