@@ -34,6 +34,15 @@ library(tidyverse)
 
 flatTable <- function(fieldIDs, instance = 0){
 
+# Check arguments
+if(!is.numeric(fieldIDs)){
+	stop("Please provide a numeric value for the fieldIDs.")
+}
+
+if(!instance %in% c(0:3)){
+	stop("Please provide either 0,1,2 or 3 for the instance. See documentation for more details.")
+}
+
 # Connect to the database
 con <- DBI::dbConnect(duckdb::duckdb(),
   dbdir="/exports/igmm/eddie/GenScotDepression/data/ukb/phenotypes/fields/2022-11-phenotypes-ukb670429-v0.7.1/ukb670429.duckdb",
